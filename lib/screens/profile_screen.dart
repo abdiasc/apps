@@ -105,6 +105,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   Widget _buildProfileHeader(Color primaryColor) {
     return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
       padding: const EdgeInsets.all(25),
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -126,8 +128,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             alignment: Alignment.bottomRight,
             children: [
               Container(
-                width: 120,
-                height: 120,
+                width: 200,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(color: Colors.white, width: 3),
